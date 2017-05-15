@@ -9,16 +9,34 @@
 
   function menuConfig(menuService) {
     menuService.addMenuItem('topbar', {
-      title: 'Articles',
-      state: 'articles',
+      title: 'Opciones',
+      state: 'home',
       type: 'dropdown',
       roles: ['*']
     });
 
     // Add the dropdown list item
     menuService.addSubMenuItem('topbar', 'articles', {
-      title: 'List Articles',
-      state: 'articles.list',
+      title: 'Ubicación',
+      state: 'home',
+      roles: ['*']
+    });
+     // Add the dropdown list item
+    menuService.addSubMenuItem('topbar', 'articles', {
+      title: 'Historial',
+      state: 'home',
+      roles: ['*']
+    });
+     // Add the dropdown list item
+    menuService.addSubMenuItem('topbar', 'articles', {
+      title: 'Notificaciones',
+      state: 'home',
+      roles: ['*']
+    });
+     // Add the dropdown list item
+    menuService.addSubMenuItem('topbar', 'articles', {
+      title: 'Configuración',
+      state: 'home',
       roles: ['*']
     });
   }

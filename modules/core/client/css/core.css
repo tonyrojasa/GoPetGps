@@ -41,3 +41,21 @@ a:hover .header-profile-image {
 .has-error .help-inline.error-text {
   display: inline;
 }
+body{
+  min-height: 100%;
+}
+
+body {
+    background-image: url("../img/brand/mascotas1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.white{
+  color: white;
+}
+.homeButton{
+  width: 85%;
+  height: 70px;
+}
