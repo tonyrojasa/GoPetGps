@@ -10,7 +10,7 @@
   function menuConfig(menuService) {
     menuService.addMenuItem('topbar', {
       title: 'Opciones',
-      state: 'home',
+      state: 'articles',
       type: 'dropdown',
       roles: ['*']
     });
