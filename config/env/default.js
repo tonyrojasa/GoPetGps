@@ -2,9 +2,9 @@
 
 module.exports = {
   app: {
-    title: 'GPS Pet Tracker',
-    description: 'GPS Pet Tracker',
-    keywords: 'GPS, Pet, Tracker',
+    title: 'Pet Go - GPS Pet Tracker',
+    description: 'Pet Go - GPS Pet Tracker by Pet Solution',
+    keywords: 'GPS, Pet, Tracker, solution',
     googleAnalyticsTrackingID: process.env.GOOGLE_ANALYTICS_TRACKING_ID || 'GOOGLE_ANALYTICS_TRACKING_ID'
   },
   db: {
@@ -41,7 +41,7 @@ module.exports = {
     xssProtection: true
   },
   logo: 'modules/core/client/img/brand/logo.png',
-  favicon: 'modules/core/client/img/brand/cat.ico',
+  favicon: 'modules/core/client/img/brand/favicon.ico',
   illegalUsernames: ['meanjs', 'administrator', 'password', 'admin', 'user',
     'unknown', 'anonymous', 'null', 'undefined', 'api'
   ],
