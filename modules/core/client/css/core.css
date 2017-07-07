@@ -47,11 +47,15 @@ body{
 
 body {
     background-image: url("../img/brand/mascotas1.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-color: #333;
+}
+.locationMapExampleImage{ 
+  margin-top: -5%;
+  text-align: center;
 }
 .white{
   color: white;
