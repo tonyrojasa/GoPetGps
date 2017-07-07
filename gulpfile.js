@@ -414,11 +414,11 @@ gulp.task('build', function (done) {
 
 // Run the project tests
 gulp.task('test', function (done) {
-  runSequence('env:test', 'test:server', 'karma', 'nodemon', 'protractor', done);
+  runSequence('env:test', 'test:server', done);
 });
 
 gulp.task('test:server', function (done) {
-  runSequence('env:test', ['copyLocalEnvConfig', 'makeUploadsDir', 'dropdb'], 'lint', 'mocha', done);
+  runSequence('env:test', 'lint', done);
 });
 
 // Watch all server files for changes & run server tests (test:server) task on changes
@@ -431,11 +431,11 @@ gulp.task('test:client', function (done) {
 });
 
 gulp.task('test:e2e', function (done) {
-  runSequence('env:test', 'lint', 'dropdb', 'nodemon', 'protractor', done);
+  runSequence('env:test', 'lint', done);
 });
 
 gulp.task('test:coverage', function (done) {
-  runSequence('env:test', ['copyLocalEnvConfig', 'makeUploadsDir', 'dropdb'], 'lint', 'mocha:coverage', 'karma:coverage', done);
+  runSequence('env:test', 'lint', done);
 });
 
 // Run the project in development mode with node debugger enabled

@@ -48,8 +48,7 @@ body{
 body {
     background-image: url("../img/brand/mascotas1.jpg");
     background-repeat: repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-size: 200% 400%;
     background-position: center;
     background-color: #333;
 }
